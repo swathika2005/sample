@@ -1,0 +1,95 @@
+if-else: age elligibility
+
+import java.util.Scanner;
+class Main {
+   public static void main(String[] args) 
+   {
+        Scanner input = new Scanner(System.in);
+       int a=input.nextInt();
+        if(a>18)
+	System.out.print("Elligible");
+       else 
+           System.out.print("Not elligible");
+       }
+   }
+
+if-else:scholarship elligibility
+
+import java.util.Scanner;
+class Main {
+   public static void main(String[] args) 
+   {
+        Scanner input = new Scanner(System.in);
+       int a=input.nextInt();
+        int b=input.nextInt();
+        if(a>85 && b<500000)
+        {
+         System.out.print("Elligible");
+        
+        }
+       else 
+       {
+           System.out.print("Not elligible");
+       }
+   }
+}
+
+
+nested if:scholarship elligibility
+
+import java.util.Scanner;
+class Main {
+   public static void main(String[] args) 
+   {
+        Scanner input = new Scanner(System.in);
+       int a=input.nextInt();
+        int b=input.nextInt();
+        if(a>85)
+	{
+ 	 System.out.print("Elligible");
+        
+        if(b<500000)
+	{
+	  System.out.print("Elligible");
+	}
+       }
+	else
+	{
+	 System.out.print("Not Elligible");
+	}
+       }
+     }
+
+for loop: multi-dimensional array
+
+class Main {
+    public static void main(String[] args) {
+       int arr[][] = {{1,4,5,8,9},{11,12,13,14,15}};
+       for(int i=0;i<arr.length;i++)
+       {
+         for(int j=0;j<arr[i].length;j++)
+         {
+            System.out.print(arr[i][j]+" ");
+         }
+           System.out.println("");
+       }
+    
+ }
+}
+
+for loop: single-dimensional array
+
+class Main {
+    public static void main(String[] args) {
+       int arr[]= {1,4,5,8,9};
+       int count=0;
+       for(int i=0;i<arr.length;i++)
+       {
+	 count++;
+         System.out.println(count);
+       }
+    
+ }
+}
+
+
