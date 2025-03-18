@@ -1,0 +1,159 @@
+String comparison:
+
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+       String s1 = new String("Hello");
+       Scanner input = new Scanner(System.in);
+       String s2 = input.nextLine();
+       System.out.println(s1.equals(s2));
+    }
+}
+
+String Comparison: Different memory allocation
+
+class Main {
+    public static void main(String[] args) {
+       String s1= "Java is fun";
+       String s2= "Java is fun";
+       String s3 = new String("Java is fun");
+       System.out.println(s1 == s2);
+       System.out.println(s1 == s3);
+       System.out.println(s2 == s3);
+       System.out.println(s1.equals(s3));
+    }
+}
+
+Substring:
+
+class Main {
+    public static void main(String[] args) {
+       String str = "Java programming";
+       System.out.println("Substring from index5:"+str.substring(5));
+       System.out.println("Substring from index0to4:"+str.substring(0,4));
+    }
+}
+
+String: replace
+
+class Main {
+    public static void main(String[] args) {
+        String str = "Java Programming";
+        System.out.println(str.replace('a','x'));
+ 
+    }
+}
+
+String : index of
+
+class Main {
+    public static void main(String[] args) {
+        String str = "Java Programming";
+        System.out.println(str.indexOf("Prog"));
+ 
+    }
+}
+
+String: equals(), equalsIgnoreCase
+
+class Main {
+    public static void main(String[] args) {
+        String str1 = "Java Programming";
+        String str2 = "Java programming";
+        System.out.println("case-sensitive equals:"+str1.equals(str2));
+        System.out.println("case-insensitive equals:"+str1.equalsIgnoreCase(str2));
+    }
+}
+
+String: trim()
+
+class Main {
+    public static void main(String[] args) {
+        String str = " JavaProgramming ";
+      
+        System.out.println("["+str+"]");
+        System.out.println("["+str.trim()+"]");
+    }
+}
+
+String: intern()---> used to change the value from heap memory to string pool
+
+class Main {
+    public static void main(String[] args) {
+        String str1 = new String("JavaProgramming");
+        String str2 = "JavaProgramming";
+        String str3 = str1.intern();
+        System.out.println(str1 == str2);
+        System.out.println(str2 == str3);
+    }
+}
+
+
+String: wrapper class and multiple string operations
+
+
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        String s1 = input.nextLine();
+        String[] arr = s1.split(",");
+        int max=0;
+        for(int i=0;i<arr.length;i++){
+            if(Integer.parseInt(arr[i])>max){
+                max=Integer.parseInt(arr[i]);
+            }
+        }
+        System.out.println(max);
+    }
+}
+
+String: append
+
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        StringBuffer str = new StringBuffer("Hello");
+        str.append("World");
+        System.out.println(str);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
