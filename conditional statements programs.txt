@@ -1,0 +1,184 @@
+(1)....Movie Ticket Discount: Write a program that calculates the final ticket price.
+A theater offers a discount based on age:
+	*Below 12 years 50% discount, 
+	*60 years or above 30% discount, 
+	*Others No discount.
+
+source code:
+
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);        
+   int age= input.nextInt();
+   int discount=0;
+   
+ //if(age>18 && weight<=50 )
+
+  if(age<12){
+      discount=50;
+  }
+  else if(age>=60)
+      discount=30;
+  
+  if (discount>0) {
+        System.out.println("eligible  "+discount );
+        } else 
+            System.out.println(" not eligible ");
+        }
+    }
+
+2)....Loan Approval:Write a program to check loan eligibility.
+A bank approves a loan if:
+	*The applicant is at least 21 years old.
+	*Their monthly salary is 30,000 or more.
+	*If the salary is less than 30,000 but greater than 20,000, 
+	*they must have a good credit score (above 750).
+
+
+SOURCE CODE:
+
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);  
+        System.out.println("age:");
+   int age= input.nextInt();
+   System.out.println("salary:");
+   int salary=input.nextInt();
+   System.out.println("credit:");
+   int credit=input.nextInt();
+   
+ //if(age>18 && weight<=50 )
+
+  if(age>20 && salary>20000 && salary<30000 && credit >750){
+      
+        System.out.println("eligible  ");
+        } else 
+            System.out.println(" not eligible ");
+        }
+   }
+
+
+3).......Switch Case / Alternative Conditions
+Traffic Signal Rules:
+Write a program that takes a traffic signal color as input (Red, Yellow, Green) and prints:
+	*"Stop" for Red
+	*"Get Ready" for Yellow
+	*"Go" for Green
+
+SOURCE CODE:
+
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);  
+        System.out.println("color:");
+   String color= input.nextLine();
+   
+ //if(age>18 && weight<=50 )
+ switch(color){
+     case "red":
+          System.out.println("Stop");
+          break;
+     case "yellow":
+          System.out.println("Get Ready");
+          break;
+    case "green":
+          System.out.println("Go");
+          break;
+       }
+   }
+ }
+
+4).... Write a java program takes a number from the user and generates an integer between 1 and 7.It displays the weekday name.
+TEST DATA..
+Input number: 3
+Expected output: Wednesday
+
+SOURCE CODE:
+
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);  
+        System.out.println("choice:");
+    int choice= input.nextInt();
+   
+ //if(age>18 && weight<=50 )
+ System.out.println("Expected Output:");
+ switch(choice){
+     case 1:
+          System.out.println("Sunday");
+          break;
+     case 2:
+          System.out.println("Monday");
+          break;
+    case 3:
+          System.out.println("Tuesday");
+          break;
+    case 4:
+          System.out.println("Wednesday");
+          break;
+    case 5:
+          System.out.println("Thursday");
+          break;
+    case 6:
+          System.out.println("Friday");
+          break;
+    case 7:
+          System.out.println("Saturday");
+          break;
+     }
+   }   
+}
+
+
+5)...... Exam passing criteria:  Write a program that checks if a student has passed or failed.
+A student passes an exam if:
+ 	*They score atleast 40 marks in theory and 30 marks in practical's.
+	* If the theory marks are below 40, they must have atleast 70 marks overall to pass.
+
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.println(" Theory:");
+   int theory= input.nextInt();
+        System.out.println(" Practical:");
+   int practical= input.nextInt();
+     int sum=theory+practical;
+ //if(age>18 && weight<=50 )
+
+  if(theory>=40 && practical>=30){
+     System.out.println(" pass");
+  }
+ if(sum>=70){
+     System.out.println(" pass");
+  }
+  else 
+  System.out.println(" Fail");  
+}
+    
+}
+
+6)............right angled triangled
+
+class Main {
+    public static void main(String[] args) {
+      int n=1;
+      //int count=0;
+      for(int i=0;i<=6;i++){
+           for(int j=0;j<=i;j++){
+         System.out.print(n+ " ");
+                n++;
+      }
+      System.out.println(" ");
+    }
+}
+}
